@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="window">
+        <h1 class="title">
+            Собери себе бургер
+        </h1>
+        <div class="main">
+            <form class="ingredients">
+                <h3 class="ingredients__title">
+                    Выбери размер бургера
+                </h3>
+                <select name="burger-size" id="burger-size">
+                    <option value="small">Маленький</option>
+                    <option value="large">Большой</option>
+                </select>
+                <h3 class="ingredients__title">
+                    Выбери начинку
+                </h3>
+                <select name="burger-sruffing" id="burger-stuffing">
+                    <option value="cheese">Сыр</option>
+                    <option value="potato">Картошка</option>
+                    <option value="salad">Салат</option>
+                </select>
+                <h3 class="ingredients__title">
+                    Выбери добавку
+                </h3>
+                <label>
+                    <input type="checkbox" name="burger-topping" value="spice">
+                    Приправка
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="burger-topping" value="mayo">
+                    Майонезик
+                </label>
+                <button class="btn" type="button">
+                    Создать
+                </button>
+            </form>
+            <div class="result">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="hw6_1.js"></script>
+</body>
+
+</html>
