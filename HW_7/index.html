@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="window">
+        <h1 class="title">
+            Собери себе бургер
+        </h1>
+        <div class="main">
+            <form class="ingredients">
+                <h3 class="ingredients__title">
+                    Выбери размер бургера
+                </h3>
+                <label>
+                    <input type="radio" name="burg-size" value="small" checked>
+                    Маленький
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="burg-size" value="large">
+                    Большой
+                </label>
+                <br>
+                <h3 class="ingredients__title">
+                    Выбери начинку
+                </h3>
+                <label>
+                    <input type="radio" name="burg-stuf" value="cheese" checked>
+                    Сыр
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="burg-stuf" value="potato">
+                    Картошка
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="burg-stuf" value="salad">
+                    Салат
+                </label>
+                <br>
+                <h3 class="ingredients__title">
+                    Выбери добавку
+                </h3>
+                <label>
+                    <input type="checkbox" name="burg-topp" value="spice">
+                    Приправка
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="burg-topp" value="mayo">
+                    Майонезик
+                </label>
+                <br><br>
+                <button class="btn" type="button">
+                    Создать
+                </button>
+            </form>
+
+            <div class="result">
+                <div class="result__figure">
+                    <img class="burger-img" src="" alt="">
+                </div>
+                <div class="result__values"></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="hamburger.js"></script>
+    <script src="hw7.js"></script>
+</body>
+</html>
