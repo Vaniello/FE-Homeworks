@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Oswald" rel="stylesheet">
+
+    <style>
+        
+        .notes {
+            display: flex;
+            justify-content: center;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .notes__item{
+            width: 25%;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .notes__item-title {
+            font-family: 'Bungee', cursive;
+            padding: 10px 30px;
+            text-align: center;
+        }
+        
+        .list__element-favorite {
+            cursor: pointer;
+            background-image: url('img/star_not-active.png');
+            position: relative;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-left: 30px;
+            transform: translateY(5px);
+        }
+
+        .list__element-favorite_active::after {
+            content: '';
+            background-image: url('img/star_active.png');
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 0;
+            top: 0;
+        }
+
+        .list__element-btn {
+            margin-left: 50px;
+        }
+
+        .accordion{
+            width: 50%;
+            margin: 50px auto;
+            border: 1px solid #b3b3b3;
+            border-bottom: none;
+        }
+
+        .accordion__header {
+            margin: 0;
+            font-family: 'Bungee', cursive;
+            padding: 20px 30px;
+            border-bottom: 1px solid #b3b3b3;
+        }
+
+        .accordion__header::after {
+            content: '+';
+            color: #000;
+            float: right;
+        }
+        
+        .accordion__header_active::after {
+            content: '-';
+            color: #000;
+            float: right;
+        }
+
+        .accordion__main {
+            font-family: 'Oswald', sans-serif;
+            padding: 20px 30px;
+            border-bottom: 1px solid #b3b3b3;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="notes">
+        <div class="notes__item">
+            <h2 class="notes__item-title">Notes</h2>
+            <ul class="list">
+
+            </ul>
+        </div>
+        <div class="notes__item">
+            <h2 class="notes__item-title">
+                Favorite Notes
+            </h2>
+            <ul class="favorite-list">
+            
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <h3 class="accordion__header">
+            First
+        </h3>
+        <div class="accordion__main">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex libero perferendis, totam tempore beatae est, dolores ipsa deleniti velit, molestiae reiciendis voluptas quidem labore facere aperiam quam id modi minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sint, fugit, consequuntur cupiditate nihil eaque vel veritatis dolorem nesciunt quam tempore? Atque reiciendis consequatur quam culpa. Doloremque et nobis ab voluptatem, sit optio delectus cupiditate culpa minima vitae nemo ipsam ea atque impedit blanditiis libero ad magnam nisi dolorum a!
+        </div>
+        <h3 class="accordion__header">
+            Second
+        </h3>
+        <div class="accordion__main">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex libero perferendis, totam tempore beatae est, dolores ipsa deleniti velit, molestiae reiciendis voluptas quidem labore facere aperiam quam id modi minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sint, fugit, consequuntur cupiditate nihil eaque vel veritatis dolorem nesciunt quam tempore? Atque reiciendis consequatur quam culpa. Doloremque et nobis ab voluptatem, sit optio delectus cupiditate culpa minima vitae nemo ipsam ea atque impedit blanditiis libero ad magnam nisi dolorum a!
+        </div>
+        <h3 class="accordion__header">
+            Third
+        </h3>
+        <div class="accordion__main">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex libero perferendis, totam tempore beatae est, dolores ipsa deleniti velit, molestiae reiciendis voluptas quidem labore facere aperiam quam id modi minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sint, fugit, consequuntur cupiditate nihil eaque vel veritatis dolorem nesciunt quam tempore? Atque reiciendis consequatur quam culpa. Doloremque et nobis ab voluptatem, sit optio delectus cupiditate culpa minima vitae nemo ipsam ea atque impedit blanditiis libero ad magnam nisi dolorum a!
+        </div>
+        <h3 class="accordion__header">
+            Fourth
+        </h3>
+        <div class="accordion__main">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex libero perferendis, totam tempore beatae est, dolores ipsa deleniti velit, molestiae reiciendis voluptas quidem labore facere aperiam quam id modi minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sint, fugit, consequuntur cupiditate nihil eaque vel veritatis dolorem nesciunt quam tempore? Atque reiciendis consequatur quam culpa. Doloremque et nobis ab voluptatem, sit optio delectus cupiditate culpa minima vitae nemo ipsam ea atque impedit blanditiis libero ad magnam nisi dolorum a!
+        </div>
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/notes/notes.model.js"></script>
+    <script src="js/notes/notes.view.js"></script>
+    <script src="js/notes/notes.controller.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
