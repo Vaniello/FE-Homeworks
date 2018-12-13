@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      * {
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;
+        }
+
+        .slider {
+            margin: 50px 0 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider__container {
+            height: 400px;
+            width: 370px;
+        }
+
+        .slider__control {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .slider__control::before {
+            content: '';
+            margin: 30px 10px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #bbb;
+        }
+
+        .slider__control_active::before {
+            background-color: #000;
+        }
+
+        .slider__btns {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn_nonActive {
+            display: none;
+        }
+
+        .slide__info {
+            display: none;
+        }
+
+        .slide__info_active {
+            display: block;
+        }
+
+        .slider__info {
+            margin: 30px auto;
+            display: none;
+            text-align: center;
+        }
+
+        .slider__info_open {
+            display: block;
+        }
+  </style>
+</head>
+<body>
+  
+    <div class="slider">
+        <div class="slider__container">
+            <img class="slide__image" src="" alt="">
+        </div>
+        <div class="slider__controls"></div>
+    </div>
+
+    <div class="slider__btns">
+        <button class="btn" id="opennigButton" type="button">
+            More information
+        </button>
+        <button class="btn btn_nonActive" id="closingButton" type="button">
+            Hide information
+        </button>
+    </div>  
+
+    <div class="slider__info"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
