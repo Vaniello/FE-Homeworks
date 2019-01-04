@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Minesweeper</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="result"></div>
+
+  <div class="start">
+    <h2>Hello! Select number of bombs and start playing!!!</h2>
+    <br>
+    <label>
+      <input class="bombNumber__input" type="radio" name="bombNumber" value="5">
+      <div class="customRadio"></div>
+      5
+    </label>
+    <label>
+      <input class="bombNumber__input" type="radio" name="bombNumber" value="10" checked>
+      <div class="customRadio"></div>
+      10
+    </label>
+    <label>
+      <input class="bombNumber__input" type="radio" name="bombNumber" value="15">
+      <div class="customRadio"></div>
+      15
+    </label>
+    <label>
+      <input class="bombNumber__input" type="radio" name="bombNumber" value="20">
+      <div class="customRadio"></div>
+      20
+    </label>
+    <br>
+    <br>
+    <button class="btn btn_start" type="button">start</button>
+  </div>
+
+  <div class="area disable"></div>
+  
+  <script src='js/main.js'></script>
+</body>
+</html>
